@@ -1,0 +1,188 @@
+/*FONTS*/
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v27-latin-regular.woff2") format("woff2"),
+       url("../fonts/roboto-v27-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v27-latin-500.woff2") format("woff2"),
+       url("../fonts/roboto-v27-latin-500.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v27-latin-700.woff2") format("woff2"),
+       url("../fonts/roboto-v27-latin-700.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/roboto-v27-latin-900.woff2") format("woff2"),
+       url("../fonts/roboto-v27-latin-900.woff") format("woff");
+}
+/*CUSTOM PROPERTIES*/
+:root {
+  --font-family: "Roboto", "Arial", sans-serif;
+}
+/* #BOX-SIZING */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+h1, h2, h3 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+/* #GLOBAL-STYLES */
+body {
+  font-family: var(--font-family);
+  background-color: #fff;
+  color: #222;
+  font-weight: 500;
+}
+
+/* VISUALLY HIDING CODE */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* CONTAINER */
+.container {
+  width: 1225px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*SITE-HEADER*/
+.sitenav {
+  margin-top: 40px;
+}
+.sitenav__container {
+  display: flex;
+  align-items: center;
+}
+.sitenav__link {
+  margin-right: auto;
+}
+.sitenav__logo {
+  display: block;
+}
+.sitenav__list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.sitenav__item {
+  margin-left: 72px;
+}
+.sitenav__link {
+  text-decoration: none;
+  color: #505050;
+  line-height: 20px;
+  font-size: 17px;
+}
+.sitenav__link--bordered {
+  padding: 9px 33px 13px 35px;
+  border-radius: 11px;
+  border: 2px solid #717cff;
+  transition: background-color 0.2s linear,
+              color 0.1s linear;
+}
+.sitenav__link--bordered:hover {
+  color: #fff;
+  background-color: #717cff;
+}
+
+/*MAIN*/
+
+/*SUPPORT*/
+.support {
+  padding-top: 150px;
+  padding-bottom: 54px;
+  background-image: url("../images/student-woman.png");
+  background-repeat: no-repeat;
+  background-size: 1049px 728px;
+  background-position: calc(50% + 600px) calc(-165%);
+}
+.support__info-wrapper {
+  width: 630px;
+}
+.support__heading {
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 65px;
+  margin-bottom: 15px;
+}
+.support__heading b {
+  color: #717cff;
+}
+.support__desc {
+  font-size: 22px;
+  line-height: 38px;
+  color: #7d7d7d;
+  margin-bottom: 42px;
+}
+.support__button {
+  width: 262px;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  line-height: 40px;
+  text-decoration: none;
+  background-color: #717cff;
+  color: #fff;
+  padding: 12px 32px;
+  border-radius: 11px;
+  margin-bottom: 101px;
+}
+.support__button:after {
+  content: "";
+  background-image: url("../images/arrow-right.svg");
+  width: 28px;
+  height: 26px;
+  margin-left: 29px;
+  transition: transform 0.3s ease;
+}
+.support__button:hover.support__button:after {
+  transform: translateX(10px);
+}
+.support__socials {
+  display: flex;
+  align-items: center;
+}
+.support__socials__link {
+  text-decoration: none;
+}
+.facebook {
+  margin-right: 23px;
+}
+.twitter {
+  margin-right: 15px;
+}
