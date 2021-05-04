@@ -502,3 +502,64 @@ body {
   height: 50vh;
   background-color: #fff;
 }
+
+/*SITE-FOOTER*/
+.site-footer {
+  background-color: #717cff;
+  color: #eee;
+  padding-top: 64px;
+  padding-bottom: 45px;
+}
+.site-footer__container {
+  display: flex;
+  align-items: center;
+}
+.site-footer__info {
+  width: 343px;
+  margin-right: 130px;
+}
+.site-footer__logo {
+  margin-bottom: 26px;
+}
+address {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 38px;
+  margin-bottom: 58px;
+}
+.copyright {
+  font-size: 18px;
+  line-height: 38px;
+}
+.site-footer__nav {
+  display: flex;
+}
+.site-footer__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-right: 152px;
+}
+.site-footer__link {
+  text-decoration: none;
+  color: #eee;
+  font-size: 18px;
+  line-height: 49px;
+  font-weight: 500;
+}
+
+.site-footer__socials {
+  align-self: end;
+  display: flex;
+  align-items: center;
+}
+.site-footer__socials__link {
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+.site-footer__socials__link:not(.site-footer__socials__link:last-child) {
+  margin-right: 28px;
+}
+.site-footer__socials__link svg {
+  display: block;
+}
