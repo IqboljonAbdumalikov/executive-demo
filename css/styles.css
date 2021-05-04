@@ -102,6 +102,22 @@ body {
 }
 .sitenav__item {
   margin-left: 72px;
+  padding-top: 9px;
+}
+.sitenav__item:not(.sitenav__item--last):after {
+  margin-top: 13px;
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: #717cff;
+  transition: 0.8s ease;
+}
+.sitenav__item:hover:after {
+  width: 100%;
+}
+.sitenav__item--last {
+  margin-bottom: 13px;
 }
 .sitenav__link {
   text-decoration: none;
@@ -188,6 +204,35 @@ body {
   margin-right: 15px;
 }
 
+/*UNIVERSITIES*/
+.universities {
+  background-color: #fafafa;
+  padding-top: 55px;
+  padding-bottom: 175px;
+}
+
+.universities__heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 23px;
+  line-height: 27px;
+  color: #373737;
+  letter-spacing: 2.1px;
+}
+.universities__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.universities__link__img {
+  width: 250px;
+  margin-top: 100px;
+  transition: transform 0.4s ease;
+}
+.universities__link__img:hover {
+  transform: scale(1.050);
+}
 
 /*SERVICES SECTION*/
 .services {
@@ -390,9 +435,66 @@ body {
   transform: translateX(10px);
 }
 
-/*TESTIMONIAL*/
+/*COUNTRIES*/
+.countries {
+  background-color: #fafafa;
+  padding-top: 82px;
+  padding-bottom: 190px;
+}
+.countries__title-wrapper {
+  width: 950px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 77px;
+}
+.countries__heading {
+  font-size: 37px;
+  line-height: 54px;
+  letter-spacing: 0.46px;
+  margin-bottom: 25px;
+}
+.countries__desc {
+  font-size: 22px;
+  line-height: 38px;
+  color: #7d7d7d;
+}
+.countries__list {
+  overflow-x: scroll;
+  display: flex;
+}
+.countries__item {
+  width: 348px;
+}
+.countries__item:not(.countries__item:last-child) {
+  margin-right: 50px;
+  margin-bottom: 30px;
+}
+.countries__item:nth-of-type(3n) {
+  margin-right: 70px;
+}
+.countries__image {
+  margin-bottom: 27px;
+}
 
+.countries__info__link {
+  display: inline-block;
+  font-size: 25px;
+  line-height: 29px;
+  margin-bottom: 11px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #37474f;
+}
+.countries__info__desc {
+    line-height: 27px;
+    color: rgba(55, 71, 79, 0.7216);
+}
+.countries__info__link:hover {
+  text-decoration: underline;
+}
+/*TESTIMONIAL*/
 .testimonial {
+  margin-top: 114px;
   margin-bottom: 98px;
 }
 
