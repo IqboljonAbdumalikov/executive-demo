@@ -83,6 +83,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
 /*SITE-HEADER*/
 .sitenav {
   margin-top: 40px;
@@ -958,8 +959,10 @@ address {
   }
   .join-us__button {
     width: auto;
-    white-space: nowrap;
-    
+    white-space: nowrap; 
+  }
+  .services__item {
+    padding: 28px;
   }
 }
 
@@ -1070,6 +1073,9 @@ address {
   .services__info__heading:before {
     margin: 0 auto 30px;
   }
+  .services__info__link {
+    margin: 0 auto;
+  }
   .countries__image {
     width: 85%;
     height: 85%;
@@ -1085,7 +1091,12 @@ address {
     width: 360px;
     margin: 0 auto;
   }
-
+  .news__item {
+    width: 300px;
+  }
+  .news__item img {
+    width: 300px;
+  }
 }
 @media only screen and (max-width: 360px) {
   .container {
@@ -1093,6 +1104,9 @@ address {
     margin: 0 auto;
   }
   .support__info-wrapper {
+    width: auto;
+  }
+  .news__item {
     width: auto;
   }
 }
