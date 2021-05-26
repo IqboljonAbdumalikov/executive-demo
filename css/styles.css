@@ -1,4 +1,4 @@
-/*FONTS*/
+FONTS*/
 @font-face {
   font-family: "Roboto";
   font-style: normal;
@@ -85,6 +85,45 @@ body {
 }
 
 /*SITE-HEADER*/
+.site-header__content {
+  display: none;
+}
+.site-header--open .site-header__content {
+  display: block;
+}
+.site-header__container {
+  display: flex;
+  align-items: center;
+}
+/*SITENAV MENU*/
+
+
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
 .sitenav {
   margin-top: 40px;
 }
@@ -99,6 +138,7 @@ body {
 .site-footer__logo {
   display: block;
 }
+
 .sitenav__list {
   display: flex;
   align-items: center;
@@ -1023,6 +1063,10 @@ address {
 }
 
 @media only screen and (max-width: 530px) {
+  .sitenav__logo {
+    width: 120px;
+    height: auto;
+  }
   .container {
     width: 455px;
     margin: 0 auto;
@@ -1119,4 +1163,3 @@ address {
   }
 
 }
-*/
